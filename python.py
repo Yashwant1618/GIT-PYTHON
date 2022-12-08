@@ -1,10 +1,23 @@
-P = float(input("Enter the principal amount : "))
+print("1. for simple interest")
+print("2. for compound interest")
 
-N = float(input("Enter the number of years : "))
+ch = input("enter choice")
 
-R = float(input("Enter the rate of interest : "))
+if ch == "1":
+    p = 100
+    t = 12
+    r = 2
 
+    si = p * (1 + (r * t))
 
-SI = (P * N * R)/100
+    print('The Simple Interest is', si)
 
-print("Simple interest : {}".format(SI))
+elif ch == "2":
+    p = 100
+    t = 12
+    r = 2
+    CI = p * (1 + r / 100) * t
+    print("Compound interest is", CI)
+
+else:
+    print("Wrong Choice!")

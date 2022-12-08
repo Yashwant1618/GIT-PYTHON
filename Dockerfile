@@ -1,5 +1,5 @@
 FROM python
 
-COPY . /src
+ADD cal.py .
 
-CMD ["python", "/src/python.py"]
+CMD [ "python", "./cal.py"]
